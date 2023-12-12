@@ -2,6 +2,7 @@ import React from "react";
 import { Feather } from "@expo/vector-icons";
 import { IStoryModel } from "../../model/storyModel";
 import { Box, Heading, Icon, Image, Text } from "native-base";
+import { StyleSheet } from "react-native";
 
 interface IFeedProps {
   data: IStoryModel;
@@ -24,10 +25,12 @@ const Feed: React.FC<IFeedProps> = ({ data }) => {
         />
       </Box>
       <Box marginY={3}>
-        <Heading size="sm" paddingBottom={1}>
-          {data.fullName}
+        <Heading size="sm" paddingBottom={1} color="#000">
+          {data.recentText}
         </Heading>
-        <Text numberOfLines={2}>{data.recenteText}</Text>
+        <Text numberOfLines={2} style={styles.textLabel}>
+          {data.fullName}
+        </Text>
       </Box>
       <Box
         marginY={1}
@@ -39,10 +42,16 @@ const Feed: React.FC<IFeedProps> = ({ data }) => {
         paddingY={1}
       >
         <Icon as={Feather} name="user" color="#000" marginRight={2} />
-        <Text numberOfLines={1}>{data.fullName}</Text>
+        <Text style={styles.textLabel}>{data.fullName}</Text>
       </Box>
     </Box>
   );
 };
+
+const styles = StyleSheet.create({
+  textLabel: {
+    color: "#000",
+  },
+});
 
 export default Feed;

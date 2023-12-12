@@ -70,7 +70,6 @@ const Home: React.FC = () => {
     ]);
   }, []);
   const handleGetItensList = () => {
-    console.log("reload list");
     setInterval(() => {
       data.push(
         ...data,
@@ -97,7 +96,7 @@ const Home: React.FC = () => {
   return (
     <Box>
       <Header />
-      <Box>
+      <Box maxH="450px">
         <Box paddingX={4}>
           <FlatList
             horizontal={true}
@@ -111,7 +110,7 @@ const Home: React.FC = () => {
             data={data}
             renderItem={({ item }) => <Feed data={item} />}
             showsVerticalScrollIndicator={false}
-            //   onEndReached={() => handleGetItensList()}
+            // onEndReached={() => handleGetItensList()}
           />
         </Box>
       </Box>

@@ -2,6 +2,6 @@ export interface IStoryModel{
   id: string;
   fullName: string;
   timeStamp: string;
-  recenteText: string;
+  recentText: string;
   avatarUrl: string;
 }

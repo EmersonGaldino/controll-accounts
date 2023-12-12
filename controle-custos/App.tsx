@@ -6,7 +6,7 @@ const config = {
   dependencies: {
     "linear-gradient": LinearGradient,
   },
-  useSystemColorMode: false,
+  useSystemColorMode: true,
   initialColorMode: "dark",
 };
 

@@ -1,5 +1,5 @@
 import { Box, Image } from "native-base";
-import React from "react";
+import React, { useEffect } from "react";
 import { IStoryModel } from "../../model/storyModel";
 
 interface IStoryProps {

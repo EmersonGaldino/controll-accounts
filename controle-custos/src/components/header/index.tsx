@@ -92,7 +92,7 @@ const Header: React.FC = () => {
               alignSelf="flex-end"
               _text={{ fontSize: 2, color: "danger.600" }}
             >
-              .
+              5
             </Badge>
 
             <Icon
@@ -114,7 +114,7 @@ const Header: React.FC = () => {
               alignSelf="flex-end"
               _text={{ fontSize: 12 }}
             >
-              2
+              4
             </Badge>
             <Icon
               as={Feather}
