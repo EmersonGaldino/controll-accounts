@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
         width="100%"
         maxW="300px"
         alignSelf="center"
-        marginTop="90px"
+        marginTop="105px"
         flex={1}
         flexDirection="row"
         justifyContent="space-between"

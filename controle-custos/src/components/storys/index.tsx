@@ -1,4 +1,4 @@
-import { Box, Image } from "native-base";
+import { Box, Divider, Image } from "native-base";
 import React, { useEffect } from "react";
 import { IStoryModel } from "../../model/storyModel";
 
